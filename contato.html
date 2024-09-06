@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="pt-br" class="">
+    <head>
+        <title>Atividade08</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="container-fluid p-3 text-center ">
+                <h1>Portfólio Arthur Bernardo</h1>
+                <label for="switch">
+                    <input type="checkbox" id="switch">Modo escuro
+                </label>
+            </div>
+            <nav class="navbar navbar-expand-sm justify-content-center">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                        <a href="index.html" class="nav-link">Sobre mim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="projetos.html" class="nav-link">Projetos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="habilidades.html" class="nav-link">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contato.html" class="nav-link active" aria-current="page">Contato</a>
+                    </li>
+                </ul>
+            </nav>      
+        </header>
+
+        <main class="py-5">
+            <section class="py-5">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <h3 class="text-center mb-4">Entre em Contato</h3>
+                            <form action="#" method="post" name="contato">
+                                <div class="mb-3">
+                                    <label for="nome" class="form-label">Nome</label>
+                                    <input class="form-control" type="text" name="nome" id="nome" placeholder="Informe seu nome" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">E-mail</label>
+                                    <input class="form-control" type="email" name="email" id="email" placeholder="Informe seu email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="telefone" class="form-label">Telefone</label>
+                                    <input class="form-control" type="tel" name="telefone" id="telefone" placeholder="Informe seu telefone" required>
+                                </div>
+                                <label for="assunto" class="form-label">Assunto:</label>
+                                <div class="form-check">
+                                    <input type="radio" class="form-check-input" id="proposta" name="assunto" value="proposta" checked>
+                                    <label class="form-check-label" for="radio1">Propostas</label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input type="radio" class="form-check-input" id="duvida" name="assunto" value="duvida">
+                                    <label class="form-check-label" for="radio2">Dúvida sobre projetos</label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input type="radio" class="form-check-input" name="assunto" id="outros" value="outros" required>
+                                    <label class="form-check-label" for="radio3">Outros:</label>
+                                  </div>
+                                <div class="mb-3 oculto" id="outro">
+                                    <label for="especificar" class="form-label">Especifique:</label>
+                                    <input class="form-control" type="text" id="especificar" name="especificar" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="mensagem" class="form-label">Mensagem</label>
+                                    <textarea class="form-control" rows="5" name="msg" id="msg" required></textarea>
+                                </div>
+                                <div class="text-center">
+                                    <input class="btn btn-success" type="submit" name="enviar" id="enviar" value="ENVIAR">
+                                    <input class="btn btn-primary" type="reset" name="cancelar" id="cancelar" value="Cancelar">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>  
+        </main>
+
+        <footer class=" text-center py-4">
+            <div class="container">
+                <p>&copy; 2024 Portfólio Arthur Bernardo. Todos os direitos reservados.</p>
+                <div class="social-icons mt-3">
+                    <a href="#" target="_blank" class="me-2 icones"><i class="bi bi-whatsapp"></i></a> 
+                    <a href="https://github.com/BearArty" target="_blank" class="me-2 icones"><i class="bi bi-github"></i></a>
+                    <a href="https://www.threads.net/@arthur_bvp" target="_blank" class="me-2 icones"><i class="bi bi-threads"></i></a>
+                    <a href="https://www.instagram.com/arthur_bvp/" target="_blank" class="me-2 icones"><i class="bi bi-instagram"></i></a>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.9/inputmask.min.js"></script>
+    <script src="script.js"></script>
+</html>

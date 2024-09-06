@@ -1,0 +1,75 @@
+:root {
+    --bg-color: #fafafa;
+    --primary-text: #2C2C2C;
+    --secondary-text: #666666;
+    --button-accent: #2980B9;
+    --button-success: #27AE60;
+    --highlight: #F7C777;
+}
+
+.dark-mode:root {
+    --bg-color: #1E2A38;
+    --primary-text: #FFFFFF;
+    --secondary-text: #BBBBBB;
+    --button-accent: #3498DB;
+    --button-success: #228B22;
+    --highlight: #FFD700;
+}
+
+#section2 {
+    background-color: var(--bg-color);
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--primary-text);
+}
+
+header {
+    background-color: var(--highlight);
+    color: var(--primary-text);
+}
+
+nav {
+    background-color: var(--button-accent);
+    color: var(--secondary-text);
+}
+
+#entrar-contato {
+    background-color: var(--button-accent);
+}
+
+#botao-contato {
+    background-color: var(--button-success);
+}
+
+footer {
+    background-color: var(--highlight);
+}
+
+h1, h2, h3 {
+    font-family: Nunito;
+    color: var(--primary-text);
+}
+p, a {
+    font-family: sans-serif;
+    color: var(--secondary-text);
+}
+
+input[type=submit] {
+    background-color: var(--button-success);
+}
+input[type=reset] {
+    background-color: var(--button-accent);
+}
+
+
+.icones {
+    color: var(--primary-text);
+}
+
+
+.oculto {
+    display: none;
+}
+
